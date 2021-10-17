@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #2874F0;
+
+}
+
+.plus-icon{
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.search-box:focus{
+    outline: none;
+    border: none;
+}
+
+.search-btn-icon{
+    color: #2B76F0;
+}
+
+.btn-login{
+    color: #2B76F0;
+}
+
+.showme{
+    display: none;
+}
+
+.btn-login:hover .showme{
+    display: block;
+}
