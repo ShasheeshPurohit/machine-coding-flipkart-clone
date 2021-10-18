@@ -4,11 +4,12 @@ export default function ProductCard({product}){
     return(
         <div className="product-card rounded-lg w-60 flex flex-col items-start">
             <div className="image-container h-4/5">
-                <img src={product.image} className="rounded-lg"/>
+                <img src={product.image} className="rounded-lg h-full"/>
             </div>
+            <div className="flex flex-col items-start p-2">
             <p>{product.brand}</p>
             <p>{product.name.slice(0,25)}{product.name.length>25?"...":""}</p>
-            <p>{product.price}</p>
+            <p>₹{product.price}</p>
             <div className="size-array flex">
                 <p>Sizes:</p>
                 <ul className="flex">
@@ -18,6 +19,7 @@ export default function ProductCard({product}){
                         );
                     })}
                 </ul>
+            </div>
             </div>
         </div>
     );

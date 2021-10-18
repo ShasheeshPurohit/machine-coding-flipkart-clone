@@ -37,12 +37,12 @@ export const filterSlice = createSlice({
         },
 
         brandFil:(state, action)=>{
-            const productData = JSON.parse(JSON.stringify(state.data))
+            const productData = JSON.parse(JSON.stringify(data))
             state.data = productData.filter((product)=>product.brand===action.payload)
         },
 
         sizeFil:(state, action)=>{
-            const productData = JSON.parse(JSON.stringify(state.data))
+            const productData = JSON.parse(JSON.stringify(data))
             state.data = productData.filter((product)=>product.size.includes(action.payload))
         }
         
